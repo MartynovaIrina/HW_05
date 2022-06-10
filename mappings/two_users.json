@@ -1,0 +1,22 @@
+{
+    "request": {
+        "urlPathPattern": "/two_users",
+        "method": "GET",
+        "bodyPatterns" : [
+            {
+                "matchesJsonPath": {
+                    "expression": "length($.users[?(@.name=~/user[0-9]+/)].length())",
+                    "equalTo": "2"
+                }
+            },
+            {
+                "matchesJsonPath": "$[?(@.users.size() == 2)]" 
+            }
+          
+        ]
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "two_users.json"
+    }
+}

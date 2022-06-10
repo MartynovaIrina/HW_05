@@ -1,0 +1,10 @@
+{
+    "request": {
+        "urlPattern": "/transaction\\?price=([0-9]*)&date=(([12][09][0-9][0-9])\\.(0[1-9]|[12][0-9]|3[01])\\.([0-1][0-9]))",
+        "method": "GET"
+    },
+    "response": {
+        "status": 200,
+		 "bodyFileName": "transaction.json"
+    }
+}

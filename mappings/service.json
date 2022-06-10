@@ -1,0 +1,10 @@
+{
+    "request": {
+        "urlPattern": "/service/[a-zA-Z0-9\/_]*",
+        "method": "GET"
+    },
+    "response": {
+        "status": 200,
+		 "bodyFileName": "service.json"
+    }
+}

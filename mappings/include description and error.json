@@ -1,0 +1,18 @@
+{
+    "request": {
+        "urlPathPattern": "/request",
+        "method": "GET",
+        "bodyPatterns" : [
+            {
+                "contains": "error_code"
+            },
+            {
+                "contains": "description"
+            }
+        ]
+    },
+    "response": {
+        "status": 200,
+         "bodyFileName": "request.json"
+    }
+}
